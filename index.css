@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+
+:root {
+  --background: #cfc3bc;
+  --background-main: #fffaf2;
+  --hr: #bebebe;
+  --bg-btn-enter: #1add4b;
+  --text-p: #78767b;
+  --bg-btn-creat: #459bfd;
+}
+
+main {
+  width: 22rem;
+  height: 35rem;
+  background-color: var(--background-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  border: 1px solid whitesmoke;
+}
+
+img {
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inputs input {
+  height: 2.5rem;
+  padding: 4px 9px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
+  border: 1px solid #7e7e7e;
+}
+
+input::placeholder {
+  font-weight: 600;
+  color: #bebebe;
+}
+
+input:focus::placeholder {
+  color: #e7e7e7;
+}
+
+.enter {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--bg-btn-enter);
+  color: white;
+  cursor: pointer;
+}
+
+.enter:hover {
+  background-color: #0fb639;
+  transition: 1.4s;
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 2rem;
+  color: var(--text-p);
+  cursor: pointer;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--hr);
+  margin-bottom: 1.5rem;
+}
+
+.creat-count {
+  height: 2.5rem;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--bg-btn-creat);
+  color: white;
+  cursor: pointer;
+}
